@@ -1,0 +1,5 @@
+#us de vim
+*.swp
+
+# tot el latex que necessita anira necessariament a b
+b

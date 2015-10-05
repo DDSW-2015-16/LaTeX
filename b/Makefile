@@ -1,0 +1,13 @@
+all: clear FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.pdf
+
+FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.pdf: FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.dvi
+	dvipdf FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.dvi
+
+FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.dvi: FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.toc
+	latex ../motor/FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.tex
+
+FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.toc:
+	latex ../motor/FerrerMargaritMarcLeivaCabelloAlbertoSistachReinosoArnau.tex
+
+clear:
+	rm *.pdf *.dvi
